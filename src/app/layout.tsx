@@ -17,6 +17,9 @@ const ptSans = PT_Sans({
 export const metadata: Metadata = {
   title: "Buy My Vibes",
   description: "Get good vibes for just $1",
+  icons: {
+    icon: '/favicon.ico',
+  }
 };
 
 export default function RootLayout({
@@ -26,6 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${nunito.variable} ${ptSans.variable} antialiased relative`}
       >
