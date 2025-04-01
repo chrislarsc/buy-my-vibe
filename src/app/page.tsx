@@ -1,6 +1,32 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Buy The Vibes - Positive Energy for $1",
+  description: "Experience pure positive energy that will brighten your day and enhance your mood. Just $1 for good vibes.",
+  openGraph: {
+    title: "Buy The Vibes - Positive Energy for $1",
+    description: "Experience pure positive energy that will brighten your day and enhance your mood. Just $1 for good vibes.",
+    images: [
+      {
+        url: "https://d1wqzb5bdbcre6.cloudfront.net/97843bb9d0cbf8268cf82e392ceb1e9d693fea0b33be49d8f8fee141e3bfa766/68747470733a2f2f66696c65732e7374726970652e636f6d2f6c696e6b732f4d44423859574e6a64463878556a6c44536a5a4c5432563062335a515655597a66475a7358327870646d56666232786d556d6442526d64335530465a624767354e5446585732597851304a7730305751787542385564",
+        width: 1200,
+        height: 630,
+        alt: "Buy The Vibes",
+      },
+    ],
+    siteName: "Buy The Vibes",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Buy The Vibes - Positive Energy for $1",
+    description: "Experience pure positive energy that will brighten your day and enhance your mood. Just $1 for good vibes.",
+    images: ["https://d1wqzb5bdbcre6.cloudfront.net/97843bb9d0cbf8268cf82e392ceb1e9d693fea0b33be49d8f8fee141e3bfa766/68747470733a2f2f66696c65732e7374726970652e636f6d2f6c696e6b732f4d44423859574e6a64463878556a6c44536a5a4c5432563062335a515655597a66475a7358327870646d56666232786d556d6442526d64335530465a624767354e5446585732597851304a7730305751787542385564"],
+  },
+};
 
 export default function Home() {
   return (
